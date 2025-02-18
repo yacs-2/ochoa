@@ -12,10 +12,42 @@ body{
   text-align:center;
   font-size:300%;
   color: black;
-  text-shadow:#70969B 2px 2px;
+  text-shadow: #70969B 2px 2px;
 }
 
 h2.heading{
   font-size: 200%;
   
+}
+
+.bordered{
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  padding: 5px;
+  border-radius: 9px;
+  margin: 5px;
+  background-color: white;
+  color:#555555;
+}
+
+a{
+  text-decoration:none;
+  font-weight:bold;
+  color:#999999
+}
+
+a:hover, a:visited {
+  color: teal;  
+}
+
+hr{
+  height: 2px;
+  border:0px;
+  background-color:teal;
+}
+
+#footer {
+  font-size: 150%;
+  text-align: center;
 }
