@@ -5,12 +5,15 @@
       Attempt 2 👍
     </title>
   </head>
-  <body style="text-align:center">
-    <button 
-            onclick="document.getElementById('myImage').src='pic_bulbon.gif'">click</button>
-    <img id="myImage" src="bulboff.gif" style="width:100px">
-    
-    <button
-      onclick="document.getElemtentById('myImage').src='pic_bulboff.gif'">click</button>
-  </body>
+  <body style="text-align:center>
+  <p id="text">This text can change size</p>
+  <button 
+          onclick="document.getElementById('text').style.fontSize = '35px'">
+    Click to make it bigger.
+  </button>
+  <button
+          onclick="document.getElementById('text').style.fontSize ='20px'">
+    Click to make it smaller.
+  </button>
+</body>
 </html>
