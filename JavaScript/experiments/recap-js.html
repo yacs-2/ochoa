@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <body style="text-align:center">
+    
+    <h1>Everything I Learned So Far:</h1>
+    <p id="text" id="original" class="stylized">
+      This text will change when you click THE BUTTONS
+    </p>
+    
+    <p>These buttons change text</p>
+    <button type="button" onclick='document.getElementById("text").innerHTML= "JAVIER"'>
+JAVIER
+    </button>
+      <button type="button" onclick='document.getElementById("text").innerHTML= "OCHOA"'>
+OCHOA
+    </button>
+   
+ 
+   <p>These buttons can change size of text</p>
+  <button 
+          onclick="document.getElementById('text').style.fontSize = '35px'">
+    Click to make it bigger.
+  </button>
+  <button
+          onclick="document.getElementById('text').style.fontSize ='16px'">
+    Click to make it smaller.
+  </button>
+   <p>These buttons can change the color of text</p>
+   <button 
+           onclick="document.getElementById('text').style.color='red'">
+     Click here to make text red
+   </button>
+   <button
+           onclick="document.getElementById('text').style.color='black'">
+     Click this to make text black</button>
+    <p>Click this button to return everything back to the original text</p>
+    
+    <button
+            onclick="document.getElementById('text').innerHTML='This text will change when you click THE BUTTON'">Original Text</button>
+    
+  <br>
+    <p><em>Click <a href="/ochoa/index.html">here</a> to return home</em></p>
+  </body>
+</html>
