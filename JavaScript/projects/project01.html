@@ -3,7 +3,113 @@
 <head>
   <title>Project01</title>
     <div style="position: sticky; top: 0; background: white ; padding: 10px; z-index: 1000; box-shadow: 0 2px 5px" id="text">The quick brown fox jumped over the lazy dog </div>
-  
+    <script>
+    let textElement= document.getElementById('text');
+  let colors = ["black", "red","orange","yellow","green","blue","purple","pink"]
+  let colorIndex=0
+  function setDecoration(style) {
+    textElement.style.textDecoration=style;
+  }
+  function changeColor(){
+    colorIndex= (colorIndex + 1)%
+    colors.length;    textElement.style.color = colors[colorIndex]
+  }
+    
+</script>
 </head>
-<body></body>
+
+ <body style="text-align:center;">
+
+
+<h2>Basic Text Decoration</h2>
+<table>
+        <tr>
+            <td><button onclick="setDecoration('none')">None</button></td>
+            <td><button onclick="setDecoration('underline')">Underline</button></td>
+            <td><button onclick="setDecoration('overline')">Overline</button></td>
+            <td><button onclick="setDecoration('line-through')">Line-Through</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="setDecoration('underline overline')">Underline + Overline</button></td>
+            <td><button onclick="setDecoration('underline line-through')">Underline + Line-Through</button></td>
+            <td><button onclick="setDecoration('overline line-through')">Overline + Line-Through</button></td>
+            <td><button onclick="setDecoration('underline overline line-through')">All</button></td>
+        </tr>
+        <tr>
+            <td colspan="4"><button onclick="changeColor()">Change Color</button></td>
+        </tr>
+    </table>
+
+
+<h2>In Depth Text Decoration</h2>
+
+<table>
+  
+   <tr>
+           
+     <th>Underline</th>       
+     <td><button onclick="setDecoration('underline double')">Double</button></td>
+     <td><button onclick="setDecoration('underline dotted')">Dotted</button></td>
+     <td><button onclick="setDecoration('underline dashed')">Dashed</button></td>
+     <td><button onclick="setDecoration('underline wavy')">Wavy</button></td>
+      </tr>
+  
+   <tr>
+  <th>Overline</th>       
+     <td><button onclick="setDecoration('overline double')">Double</button></td>
+     <td><button onclick="setDecoration('overline dotted')">Dotted</button></td>
+     <td><button onclick="setDecoration('overline dashed')">Dashed</button></td>
+     <td><button onclick="setDecoration('overline wavy')">Wavy</button></td>
+      </tr>
+  
+ <tr>
+  <th>Line-Through</th>       
+     <td><button onclick="setDecoration('line-through double')">Double</button></td>
+     <td><button onclick="setDecoration('line-through dotted')">Dotted</button></td>
+     <td><button onclick="setDecoration('line-through dashed')">Dashed</button></td>
+     <td><button onclick="setDecoration('line-through wavy')">Wavy</button></td>
+      </tr>
+  
+ <tr>
+  <th>Underline+Overline</th>       
+     <td><button onclick="setDecoration('underline overline double')">Double</button></td>
+     <td><button onclick="setDecoration('underline overline dotted')">Dotted</button></td>
+     <td><button onclick="setDecoration('underline overline dashed')">Dashed</button></td>
+     <td><button onclick="setDecoration('underline overline wavy')">Wavy</button></td>
+      </tr>
+
+ <tr>
+  <th>Underline+Line-Through</th>       
+     <td><button onclick="setDecoration('underline line-through double')">Double</button></td>
+     <td><button onclick="setDecoration('underline line-through dotted')">Dotted</button></td>
+     <td><button onclick="setDecoration('underline line-through dashed')">Dashed</button></td>
+     <td><button onclick="setDecoration('underline line-through wavy')">Wavy</button></td>
+      </tr>
+  
+     <tr>
+  <th>Overline+Line-Through</th>       
+     <td><button onclick="setDecoration('overline line-through double')">Double</button></td>
+     <td><button onclick="setDecoration('overline line-through dotted')">Dotted</button></td>
+     <td><button onclick="setDecoration('overline line-through dashed')">Dashed</button></td>
+     <td><button onclick="setDecoration('overline line-through wavy')">Wavy</button></td>
+      </tr>
+  
+      <tr>
+  <th>All</th>       
+     <td><button onclick="setDecoration('underline overline line-through double')">Double</button></td>
+     <td><button onclick="setDecoration('underline overline line-through dotted')">Dotted</button></td>
+     <td><button onclick="setDecoration('underline overline line-through dashed')">Dashed</button></td>
+     <td><button onclick="setDecoration('underline overline line-through wavy')">Wavy</button></td>
+      </tr>
+  
+  
+
+  
+  
+  
+  
+  </table>
+
+  
+</body>
 </html>
