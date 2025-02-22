@@ -18,6 +18,28 @@
   }
     
 </script>
+    <script>
+   
+  let fontSize = 16;
+   
+   function increaseSize(){
+     fontSize += 1;
+     textElement.style.fontSize = fontSize + "px"
+   }
+   
+   function decreaseSize(){
+     fontSize -= 1; 
+     textElement.style.fontSize = fontSize + "px"
+   }
+     
+      function resetSize(){
+    fontSize = 16;
+    textElement.style.fontSize = "16px"
+  }
+   
+   
+    </script>
+
 <style>
   table{
     margin-top:10px;
@@ -56,8 +78,26 @@
             <td><button onclick="setDecoration('overline line-through')">Overline + Line-Through</button></td>
             <td><button onclick="setDecoration('underline overline line-through')">All</button></td>
         </tr>
-        <tr>
-            <td colspan="4"><button onclick="changeColor()">Change Color</button></td>
+         <tr>
+            <td> <button onclick="changeColor()">Change Color</button></td>
+          
+          <td>
+            <button 
+        onclick="increaseSize()">
+  Increase Size By 1px.
+</button>
+          </td>
+          <td>
+            <button 
+          onclick="resetSize()">
+    Reset Size (16px)
+  </button>
+          </td>
+          <td>
+            <button onclick="decreaseSize()">
+  Decrease Size By 1px.
+</button>
+          </td>
         </tr>
     </table>
 
