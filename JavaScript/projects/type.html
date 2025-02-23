@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Text Box</title>
+    <style>
+        input {
+            font-size: 16px;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            text-align: center;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="text" id="preview"  placeholder="Type here..." />
+
+    <script>
+        const input = document.getElementById("preview");
+
+        input.addEventListener("input", function() {
+            input.placeholder = input.value || "Type here...";
+        });
+    </script>
+
+</body>
+</html>
 
