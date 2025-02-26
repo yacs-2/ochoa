@@ -12,7 +12,7 @@ body{
   text-align:center;
   font-size:300%;
   color: black;
-  text-shadow: #df5c48 3px 3px;
+  text-shadow: #145369 3px 3px;
 }
 
 h2.heading{
@@ -26,7 +26,7 @@ h3.heading{
 
 .bordered{
   border-style: solid;
-  border-color: #4588fc;
+  border-color: #145369;
   border-width: 3px;
   padding: 5px;
   border-radius: 9px;
