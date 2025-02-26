@@ -1,5 +1,5 @@
 body{
-  background-color:#487fdf;
+  background-color: #2596be;
   color:black;
   text-align:left;
   font-family:crossorigin;
@@ -42,7 +42,7 @@ a{
 }
 
 a:hover, a:visited {
-  color: #fc5d45;  
+  color: #041014;  
 }
 
 hr{
