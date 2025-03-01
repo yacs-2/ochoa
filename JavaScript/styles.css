@@ -1,5 +1,5 @@
 body{
-  background-color:#487fdf;
+  background-color: #2596be;
   color:black;
   text-align:left;
   font-family:crossorigin;
@@ -12,7 +12,7 @@ body{
   text-align:center;
   font-size:300%;
   color: black;
-  text-shadow: #df5c48 3px 3px;
+  text-shadow: #145369 3px 3px;
 }
 
 h2.heading{
@@ -20,9 +20,13 @@ h2.heading{
   
 }
 
+h3.heading{
+  font-size: 150%;
+}
+
 .bordered{
   border-style: solid;
-  border-color: #4588fc;
+  border-color: #145369;
   border-width: 3px;
   padding: 5px;
   border-radius: 9px;
@@ -34,11 +38,11 @@ h2.heading{
 a{
   text-decoration:none;
   font-weight:bold;
-  color:#999999
+  color:#555555;
 }
 
 a:hover, a:visited {
-  color: #fc5d45;  
+  color: #041014;  
 }
 
 hr{
