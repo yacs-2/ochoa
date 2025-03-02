@@ -46,9 +46,10 @@ a:hover, a:visited {
 }
 
 hr{
-  height: 5px;
+  height: 3px;
   border:0px;
   background-color: black;
+  border-radius: 9px;
 }
 
 #footer {
