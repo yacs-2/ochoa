@@ -46,9 +46,9 @@ a:hover, a:visited {
 }
 
 hr{
-  height: 2px;
+  height: 5px;
   border:0px;
-  background-color:#4588fc;
+  background-color:#145369;
 }
 
 #footer {
