@@ -41,14 +41,15 @@ a{
   color:#555555;
 }
 
-a:hover, a:visited {
-  color: #041014;  
+a:hover {
+  color: black;  
 }
 
 hr{
-  height: 2px;
+  height: 3px;
   border:0px;
-  background-color:#fc5d45;
+  background-color:#145369;
+  
 }
 
 #footer {
