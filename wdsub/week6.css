@@ -29,12 +29,11 @@ body{
 
 
 #links {
-  display: flex;
+   display: flex;
   flex: 1 1 auto;
   justify-content: space-evenly;
   flex-flow: row wrap;
   align-content: center;
-  width:100%;
 
 }
 
@@ -42,12 +41,11 @@ body{
   width: 100%;
   position: sticky;
   top: 0px;
-  padding: 5px 0px 5px;
-  background-color:white;
-  border:solid 1px;
-  
-  
+  padding: 0px 0px 0px;
+  border:solid gray 1px;
 }
+
+
 
 
 #background{
@@ -67,8 +65,10 @@ body{
   text-align: center;
   color: gray;
   margin: auto;
-  flex-grow:1;
-  padding:5px;
+  flex-grow: 1;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color:white;
  
 }
 
@@ -127,7 +127,8 @@ hr{
   background-color:gray;
   border:solid black;
   border-radius:9px;
-  width:40%
+  width:40%;
+  margin:10px;
 }
 
 .two{
@@ -136,5 +137,26 @@ hr{
   background-color:gray;
   border:solid black;
   border-radius:9px;
-  width:40%
+  width:40%;
+  margin:10px
 }
+
+.font{
+  font-family:'Big Shoulders Stencil';
+  font-size:75px;
+  
+}
+h2{
+  font-family:'Big Shoulders Stencil';
+  font-size:30px 
+}
+
+.block{
+  flex-grow: 0;
+  color: #2f4f4f;
+  padding: 0px;
+  margin: 0px;
+  border: solid 1px #d3d3d3;
+  
+}
+
