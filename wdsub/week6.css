@@ -1,15 +1,8 @@
-
 body{
   font-family:arial;
   margin:0px;
   
 }
-
-
-.bg{
-  text-align:center;
-}
-
 #title{
   width:100%;
   padding-top:10px;
@@ -17,37 +10,15 @@ body{
   background-color:white;
   text-align:center
 }
-
-#text{
-  margin-left:15%;
-  margin-right:15%;
-  background-color:rgb(255, 250, 250, 0.5 );
-  border:solid gray;
-  border-radius:9px;
-  padding:10px;
+.font{
+  font-family:'Big Shoulders Stencil';
+  font-size:75px;
+  
 }
-
-
-#links {
-   display: flex;
-  flex: 1 1 auto;
-  justify-content: space-evenly;
-  flex-flow: row wrap;
-  align-content: center;
-
+hr{
+  height:3px;
+  background-color:gray;
 }
-
-#sticky{
-  width: 100%;
-  position: sticky;
-  top: 0px;
-  padding: 0px 0px 0px;
-  border:solid gray 1px;
-}
-
-
-
-
 #background{
   position:fixed;
   top:0px;
@@ -58,7 +29,42 @@ body{
   opacity:0.5;
   
 }
+#think{
+  width:13%;
+}
+.one{
+  float:right;
+  padding:10px;
+  background-color:gray;
+  border:solid black;
+  border-radius:9px;
+  width:40%;
+  margin:10px;
+}
+.two{
+  float:left;
+  padding:10px;
+  background-color:gray;
+  border:solid black;
+  border-radius:9px;
+  width:40%;
+  margin:10px
+}
+#sticky{
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  padding: 0px 0px 0px;
+  border:solid gray 1px;
+}
+#links {
+   display: flex;
+  flex: 1 1 auto;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  align-content: center;
 
+}
 .nav{
   display: block;
   text-decoration: none;
@@ -71,20 +77,31 @@ body{
   background-color:white;
  
 }
-
 .nav:hover {
   color: rgb(0,0,0);
   background-color: #eee;
 }
-
-
+.block{
+  flex-grow: 0;
+  color: #2f4f4f;
+  padding: 0px;
+  margin: 0px;
+  border: solid 1px #d3d3d3;
+  
 }
-
-hr{
-  height:3px;
-  background-color:gray;
+#text{
+  margin-left:15%;
+  margin-right:15%;
+  background-color:rgb(255, 250, 250, 0.5 );
+  border:solid gray;
+  border-radius:9px;
+  padding:10px;
 }
-
+h2{
+  font-family:'Big Shoulders Stencil';
+  font-size:30px;
+  text-align:center;
+}
 #footer {
   display: flex;
   flex: 1 1 auto;
@@ -100,63 +117,16 @@ hr{
   text-align: right;
   padding-right: 10%;
 }
-
 .vertical-bar {
   border: solid 1px black;
   height: 5lh;
   flex-grow: 0;
 }
-
 #address {
   flex-grow: 1;
   text-align: left;
   padding-left: 10%;
 }
-
 #address a {
   color: black;
 }
-
-#think{
-  width:13%;
-}
-
-.one{
-  float:right;
-  padding:10px;
-  background-color:gray;
-  border:solid black;
-  border-radius:9px;
-  width:40%;
-  margin:10px;
-}
-
-.two{
-  float:left;
-  padding:10px;
-  background-color:gray;
-  border:solid black;
-  border-radius:9px;
-  width:40%;
-  margin:10px
-}
-
-.font{
-  font-family:'Big Shoulders Stencil';
-  font-size:75px;
-  
-}
-h2{
-  font-family:'Big Shoulders Stencil';
-  font-size:30px 
-}
-
-.block{
-  flex-grow: 0;
-  color: #2f4f4f;
-  padding: 0px;
-  margin: 0px;
-  border: solid 1px #d3d3d3;
-  
-}
-
