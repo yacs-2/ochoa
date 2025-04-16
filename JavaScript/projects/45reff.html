@@ -1,0 +1,29 @@
+<div id="input-grp">
+  <ul id="to-do"> 
+  </ul>
+</div>
+
+<div id="list-grp">
+  <label for="new-item">New Item: </label>
+  <input id="new-item">
+  <button onclick="addNewItem()">Add Item</button>
+</div>
+
+
+function addNewItem(){  
+  let newItem;
+  let myList;
+  let newItemText;
+  let input;
+
+  newItem = document.createElement("li");
+  
+  //Getting text from the input field for the new list item
+  input = document.getElementById("new-item");
+  newItemText = input.value ;
+  newItem.innerText = newItemText;
+  input.value = "";
+
+  myList = document.getElementById("to-do");
+  myList.appendChild(newItem);
+}
