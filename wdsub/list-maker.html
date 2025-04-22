@@ -1,20 +1,41 @@
-<h1 id="head">Welcome to Javier's list maker</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javier's List Maker</title>
+  <img id="background-img"
+      src="https://media.istockphoto.com/id/1008005598/vector/creative-vector-illustration-of-realistic-clipboard-with-paper-sheets-and-pen-with-isolated.jpg?s=612x612&w=0&k=20&c=gkn3miV19wfGczUEYOi2vBK2jkWz2PuWZdMHu1iq16o=" >
+</head>
+<body>
+  <h1 id="head">Welcome to Javier's list maker</h1>
 <!-- good luck javi-->
 <div id="list-grp">
   <label for="new-item">New Item: </label>
   <input id="new-item">
-  <button onclick="addNewItem()">Add Item</button>
-  <button onclick = "clearList()">Clear All</button>
+  <button id="btng" onclick="addNewItem()">Add Item</button>
+  <button id="btnr" onclick = "clearList()">Clear All</button>
 </div>
 
 <div id="input-grp">
   <ul id="to-do"> 
   </ul>
 </div>
+</body>
+</html>
 
 body{ 
   margin:0;
-  text-align:center
+  text-align:center;
+  
+}
+
+#background-img{
+   position:fixed;
+  top:10%;
+  left:0px;
+  width:100vw;
+  height:120vw;
+  z-index:-1;
+  opacity:0.7;  
 }
 
 #head{
@@ -32,17 +53,43 @@ body{
 
 #list-grp{
   text-align:center;
-  margin:25px;
+  margin:0%;
    
 }
 
 #input-grp{
   background-color:rgba(0,25,100,.1);
-  margin: 70px;
+  margin-top:10%;
+  margin-left:25%;
+  margin-right:25%;
   padding: 10px;
   font-weight: bold;
   text-align:left;
   border-radius:9px;
+  text-align:left;
+}
+
+#btnr{
+  background-color:rgba(250,0,0,.7);
+  padding-left:1%;
+  padding-right:1%;
+    margin:1%;
+   border-color:red;
+  border-radius:7px;
+}
+
+#btng{
+  background-color:rgba(0,250,0,.7);
+  padding-left:1%;
+  padding-right:1%;
+    margin:1%;
+  border-color:green;
+  border-radius:7px;
+
+}
+
+#new-item{
+  border-radius:7px
 }
 
 const UNCHECK_ICON = '<svg  onclick= "crossOut(this)" viewBox="0 0 448 512" width="1em" title="uncheck"><path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32z" /></svg>';
