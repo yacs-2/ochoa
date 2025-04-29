@@ -2,12 +2,7 @@
   This script will inject the global page #gheader div of each page  
 **/
 
-const INJECTION ="
+const INJECTION = '<div id="global-preheader"><h1>Weekly Webpage Submissions</h1></div><div id="global-header"><ul id="nav-list"><li><a href="/jones"></a>Home</a></li><li> <a href="#">Photos</a><ul><li><a href="#">album 1</a></li><li><a href="#">album 2</a></li><li><a href="#">album 3</a></li></ul></li><li><a href="/jones/art-projects/index.html">Projects </a><ul><li><a href="#">album 1</a></li><li><a href="#">album 2</a></li><li><a href="#">album 3</a></li></ul></li><li><a href="/jones/music/index.html"> music</a><ul><li><a href="#">album 1</a></li><li><a href="#">album 2</a></li><li><a href="#">album 3</a></li></ul></li><li><a href="/jones/web-dev">Web Development</a><ul><li><a href="/jones/wdsub/week1.html">album 1</a></li><li><a href="/jones/wdsub/recipe.html"> album 2</a></li><li><a href="/jones/wdsub/anchors.html"> album 3</a></li><li><a href="https://yacs-2.github.io/jones/wdsub/poem.html">album 1</a></li><li><a href="https://yacs-2.github.io/jones/wdsub/reviews.html">album 2</a></li><li><a href="https://yacs-2.github.io/jones/wdsub/journal.html">album 3</a></li><li><a href="https://yacs-2.github.io/jones/wdsub/band-camp.html">album 1</a></li><li><a href="https://yacs-2.github.io/jones/wdsub/list-maker.html">album 2</a></li><li><a href="#">album 3</li></ul></a></li></ul></div>'
+let _div = document.getElementById("gheader");
 
- '<div id="global-preheader"></div><h1 style="font-weight: bolder;">javier cite</h1><div id="global-header"><ul id="nav-list"><li><a href="#">Home</a></li><ul><li>Favorite Movie</li><li>Favorite Show</li><li>Favorite Book</li><li>Favorite Song</li></ul><li>Photos<ul><li>album 1</li><li>album 2</li><li>album 3</li></ul></li> <li><a href="#">Web Development</a><ul><li><a href="#">Week 1</a></li><li><a href="#">Week 2</a></li><li><a href="#">Week 3</a></li><li><a href="#">Week 4</a></li><li><a href="#">Week 5</a></li><li><a href="#">Week 6</a></li><li><a href="#">Week 7</a></li><li><a href="#">Week 8</a></li><li><a href="#">Week 9</a></li></ul></li><div>'
-
-  let _div = document.getElementById("gheader");
-
-
-  _div.innerHtml = INJECTION;
-";
+_div.innerHTML = INJECTION;
