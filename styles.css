@@ -24,6 +24,57 @@ h3.heading{
   font-size: 150%;
 }
 
+
+body{
+  text-align:center;
+}
+
+#nav-list{
+  list-style-type:none;
+  justify-content:center;
+  align-content:center;
+  display:flex;
+  background-color:rgb(10,125,255);
+  padding:2%; 
+  border:solid blue 2px;
+  border-radius:10px;
+}
+
+#nav-list > li{
+  flex-grow:1;
+  display:block;
+  text-align:center;
+  postion:relative;
+}
+
+
+#nav-list ul {
+  display:none;
+}
+
+#nav-list li:hover ul{
+  display:block;
+  background-color:rgb(50,150,255);
+  border:solid blue 2px;
+  border-radius:10px;
+}
+
+#nav-list li ul{
+  list-style-type:none;
+  padding:2%;
+  position:absolute;
+  width:99%;
+}
+
+#nav-list li:hover{
+  background-color:rgb(25,175,255);
+  color:rgb(15,200,255);
+}
+
+#nav-list li{
+  position:relative;
+}
+
 .bordered{
   border-style: solid;
   border-color: #145369;
