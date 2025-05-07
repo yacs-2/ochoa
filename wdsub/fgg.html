@@ -1,0 +1,40 @@
+<div>
+  <label for"a">a = </label><input id="a">
+  <br>
+  <label for"b">b =  </label> <input id="a">
+  <br>
+  <label for"c">c = </label><input id="c"><span class="hypotenuse"></span>
+  <br>
+</div>
+
+<button onclick="compute()">Compute</button>
+
+
+
+
+
+function compute() {
+  let _inputArr = 
+  document.querySelectorAll("input");
+  let _a = _inputArr[0].value;
+  let _b = _inputArr[1].value;
+  let _c = _inputArr[2].value;
+  
+  //if a is blank, compute a
+  if (_a == "" && _b != "" && _c != "") {
+    
+    _inputArr[0].value = Math.sqrt(Math.pow(_c , 2) - Math.pow(_b , 2));
+    
+  } else if (_inputArr[0].value != "" && _inputArr[1].value == ""&& _inputArr[2].value != "") { //if b is blank, compute b
+    
+    _inputArr[1].value = Math.sqrt(Math.pow(_c, 2) - Math.pow(_a, 2))
+    
+    
+  } else if (_inputArr[0].value != "" && _inputArr[1].value != ""&& _inputArr[2].value == "") { //if b is blank, compute c
+    
+    _inputArr[2].value = Math.sqrt(Math.pow(_a, 2) + Math.pow(_b, 2))
+    
+  } else () { //invalid input, display error
+    window.alert("Please enter atleast two side lengths")
+  }
+}
