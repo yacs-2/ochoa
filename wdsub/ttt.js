@@ -1,31 +1,30 @@
-
 let isXTurn = true;
+let squareArr = document.querySelectorAll(".square");
 
-const squareArr = document.querySelectorAll(".square");
-
-for (const _element of squareArr) {
+for(const _element of squareArr) {
   _element.addEventListener("click", markSquare);
 }
 
 function markSquare(_square) {
-   if(_square.srcElement.innerText != "X" && _square.srcElement.innerText != "O"){ 
-    if(isXTurn ){
-        _square.srcElement.innerText= "X";
-      } else {
-        _square.srcElement.innerText= "O";
-      }
-     
-      checkComplete();
-
-
-    isXTurn = !isXTurn;
-   }
+  if (_square.srcElement.innerText != "x" && _square.srcElement.innerText != "o") {
+  if (isXTurn) {
+    _square.srcElement.innerText = "x";
+  } else {
+    _square.srcElement.innerText = "o";
+  }
+  
+  checkComplete();
+    
+  isXTurn = !isXTurn;
+  }
 }
 
-  function checkComplet() {
-  for (let _i = 0, _i < 3, _i++) {
-    if (squareArr[_i].innerText == "X" || squareArr[_i].innerText  == "O")
+function checkComplete() {
+  for (let _i = 0; _i < 3; _i++) {
+    if ((squareArr[_i].innerText == "x" || squareArr[_i].innerText == "o" )
       && squareArr[_i].innerText == squareArr[_i + 3].innerText
-      && squareArr[_i].innerText == squareArr[_i + 6].innerText
-  }console.log("game over")
+        && squareArr[_i].innerText == squareArr[_i + 6].innerText
+      )console.log("the game is over")
+      
+  }
 }
