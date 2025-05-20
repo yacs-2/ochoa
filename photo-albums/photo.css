@@ -1,0 +1,41 @@
+   .photo-row{
+  display:flex
+}
+
+.photo-container{
+  flex-grow: 1;
+  border:solid 3px black;
+  text-align:center;
+  margin:1em;
+  padding:1em;
+}
+
+.photo-container img {
+  border: 3px solid black;
+  }
+
+#big-container div {
+  width: 80%;
+  padding: 2%;
+  background-color: red;
+  border:3px solid black;
+  border-radius:9px;
+}
+
+#big-img{
+  max-height: 80vh;
+}
+
+#big-container {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100vw;
+  height: 100vw;
+  padding: 10%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
