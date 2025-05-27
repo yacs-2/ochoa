@@ -7,12 +7,12 @@ cookieArr = document.cookie.split(";");
 for (const element of cookieArr) {
   if (element.split("=")[0] == "init-Date"){
     hasInitDate = true;
-    initDate = element.split("=")[1];
+    initDate = new Date(element.split("=")[1]);
   }
 }
 
 if (!hasInitDate) {
-  document.cookie = "init-date=" + new Date();
+  document.cookie = "init-date=" + new Date() + "; max-age = 31536000000";
 } else {
   let now = new Date();
   document.cookie = "new-date" + now ;
