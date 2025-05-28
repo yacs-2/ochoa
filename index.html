@@ -15,7 +15,7 @@
     </div>
 
     <script>
-      let urlParams = urlSearchParams(window.location.search);
+      let urlParams = new URLSearchParams(window.location.search);
       if (urlParams.has("variable1")) {
          let username = urlParams.get("variable1");
          let userspan = document.getElementById("userspan");
